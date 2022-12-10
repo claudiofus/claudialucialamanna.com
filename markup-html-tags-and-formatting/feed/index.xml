@@ -10,40 +10,12 @@
 	Commenti a: HTML Tags and Formatting	</title>
 	<atom:link href="https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/feed/" rel="self" type="application/rss+xml" />
 	<link>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/</link>
-	<description></description>
-	<lastBuildDate>Sun, 27 Mar 2016 18:13:35 +0000</lastBuildDate>
+	<description>HARPIST</description>
+	<lastBuildDate>Fri, 12 Feb 2016 08:28:47 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.1.1</generator>
-	<item>
-		<title>
-		Di: ale ale		</title>
-		<link>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/#comment-3</link>
-
-		<dc:creator><![CDATA[ale ale]]></dc:creator>
-		<pubDate>Sun, 27 Mar 2016 18:13:35 +0000</pubDate>
-		<guid isPermaLink="false">http://demos.famethemes.com/onepress/?p=37#comment-3</guid>
-
-					<description><![CDATA[great stuff #test]]></description>
-			<content:encoded><![CDATA[<p>great stuff #test</p>
-]]></content:encoded>
-		
-			</item>
-		<item>
-		<title>
-		Di: Bejo		</title>
-		<link>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/#comment-2</link>
-
-		<dc:creator><![CDATA[Bejo]]></dc:creator>
-		<pubDate>Thu, 25 Feb 2016 10:33:22 +0000</pubDate>
-		<guid isPermaLink="false">http://demos.famethemes.com/onepress/?p=37#comment-2</guid>
-
-					<description><![CDATA[Wow.... Beautiful themes]]></description>
-			<content:encoded><![CDATA[<p>Wow&#8230;. Beautiful themes</p>
-]]></content:encoded>
-		
-			</item>
-	</channel>
+</channel>
 </rss>

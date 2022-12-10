@@ -8,10 +8,10 @@
 	>
 
 <channel>
-	<title>12 &#8211; Claudia Lucia Lamanna</title>
+	<title>12 &#8211; CLAUDIA LUCIA LAMANNA</title>
 	<atom:link href="https://claudiofus.github.io/claudialucialamanna.com/tag/12/feed/" rel="self" type="application/rss+xml" />
 	<link>https://claudiofus.github.io/claudialucialamanna.com</link>
-	<description></description>
+	<description>HARPIST</description>
 	<lastBuildDate>Sun, 10 Apr 2016 20:15:40 +0000</lastBuildDate>
 	<language>it-IT</language>
 	<sy:updatePeriod>
@@ -77,7 +77,7 @@
 		<item>
 		<title>HTML Tags and Formatting</title>
 		<link>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/</link>
-					<comments>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/#comments</comments>
+					<comments>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/#respond</comments>
 		
 		<dc:creator><![CDATA[FameThemes]]></dc:creator>
 		<pubDate>Fri, 12 Feb 2016 08:28:47 +0000</pubDate>
@@ -239,7 +239,7 @@ United States</address>
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://claudiofus.github.io/claudialucialamanna.com/markup-html-tags-and-formatting/feed/</wfw:commentRss>
-			<slash:comments>2</slash:comments>
+			<slash:comments>0</slash:comments>
 		
 		
 			</item>
