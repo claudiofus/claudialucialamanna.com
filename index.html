@@ -143,7 +143,32 @@ border-top: none;
 border-left: none;
 border-right: none;}
 
-table td a {color: #000 !important; border: 2px solid black; text-decoration: none; padding: 5px; border-radius: 5px}</style>
+table td a {color: #000 !important; border: 2px solid black; text-decoration: none; padding: 5px; border-radius: 5px}
+
+/**—————- TABELLA MOBILE —————-**/
+@media only screen and (max-width: 840px) {
+  table {
+    width: 100%;
+}
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+}
+  tr td:first-child {
+    background: linear-gradient(45deg, lightgrey, transparent);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+  tbody td {
+    display: block;
+    text-align: center !important;
+    border:none !important;
+}
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+}
+}</style>
 		
 	</head>
 
@@ -294,7 +319,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 
 
 
-<div id="wp-block-themeisle-blocks-advanced-columns-25cb8dd0" class="wp-block-themeisle-blocks-advanced-columns has-1-columns has-tablet-equal-layout has-mobile-equal-layout hide-in-desktop has-vertical-unset">
+<div id="wp-block-themeisle-blocks-advanced-columns-092424c4" class="wp-block-themeisle-blocks-advanced-columns has-1-columns has-tablet-equal-layout has-mobile-equal-layout hide-in-desktop has-vertical-unset">
 <div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div>
 <div class="innerblocks-wrap">
 <div id="wp-block-themeisle-blocks-advanced-column-fb7e14d5" class="wp-block-themeisle-blocks-advanced-column ticss-0ebf017d">
@@ -349,8 +374,157 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <div id="video" class="wp-block-themeisle-blocks-advanced-columns alignfull has-1-columns has-desktop-equal-layout has-tablet-equal-layout has-mobile-equal-layout has-vertical-unset">
 <div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div>
 <div class="innerblocks-wrap">
-<div id="wp-block-themeisle-blocks-advanced-column-c0870d63" class="wp-block-themeisle-blocks-advanced-column">
-<iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/videoseries?listType=playlist&amp;showinfo=1&amp;list=PLxy8oC7k8_GaNsWTWj0kmPls9R5kNn7CE&amp;controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div id="wp-block-themeisle-blocks-advanced-column-c0870d63" class="wp-block-themeisle-blocks-advanced-column">			<div class="yotu-playlist yotuwp yotu-limit-min yotu-limit-max   yotu-thumb-169  yotu-template-mix" data-page="1" id="yotuwp-6399ab3654d07" data-yotu="6399ab36ad2e0" data-total="1" data-settings="eyJ0eXBlIjoicGxheWxpc3QiLCJpZCI6IlBMeHk4b0M3azhfR2FOc1dUV2owa21QbHM5UjVrTm43Q0UiLCJwYWdpbmF0aW9uIjoib24iLCJwYWdpdHlwZSI6ImxvYWRtb3JlIiwiY29sdW1uIjoiMyIsInBlcl9wYWdlIjoiMTIiLCJ0ZW1wbGF0ZSI6Im1peCIsInRpdGxlIjoib24iLCJkZXNjcmlwdGlvbiI6Im9uIiwidGh1bWJyYXRpbyI6IjE2OSIsIm1ldGEiOiJvZmYiLCJtZXRhX2RhdGEiOiJvZmYiLCJtZXRhX3Bvc2l0aW9uIjoib2ZmIiwiZGF0ZV9mb3JtYXQiOiJvZmYiLCJtZXRhX2FsaWduIjoib2ZmIiwic3Vic2NyaWJlIjoib2ZmIiwiZHVyYXRpb24iOiJvZmYiLCJtZXRhX2ljb24iOiJvZmYiLCJuZXh0dGV4dCI6IiIsInByZXZ0ZXh0IjoiIiwibG9hZG1vcmV0ZXh0IjoiIiwicGxheWVyIjp7Im1vZGUiOiJsYXJnZSIsIndpZHRoIjoiNjAwIiwic2Nyb2xsaW5nIjoiMTAwIiwiYXV0b3BsYXkiOjAsImNvbnRyb2xzIjoxLCJtb2Rlc3RicmFuZGluZyI6MSwibG9vcCI6MCwiYXV0b25leHQiOjAsInNob3dpbmZvIjoxLCJyZWwiOjEsInBsYXlpbmciOjAsInBsYXlpbmdfZGVzY3JpcHRpb24iOjAsInRodW1ibmFpbHMiOjAsImNjX2xvYWRfcG9saWN5IjoiMSIsImNjX2xhbmdfcHJlZiI6IjEiLCJobCI6IiIsIml2X2xvYWRfcG9saWN5IjoiMSJ9LCJsYXN0X3RhYiI6InBsYXllciIsInVzZV9hc19tb2RhbCI6Im9mZiIsIm1vZGFsX2lkIjoib2ZmIiwibGFzdF91cGRhdGUiOiIxNjcwOTI2NjI0Iiwic3R5bGluZyI6eyJwYWdlcl9sYXlvdXQiOiJkZWZhdWx0IiwiYnV0dG9uIjoiMSIsImJ1dHRvbl9jb2xvciI6IiIsImJ1dHRvbl9iZ19jb2xvciI6IiIsImJ1dHRvbl9jb2xvcl9ob3ZlciI6IiIsImJ1dHRvbl9iZ19jb2xvcl9ob3ZlciI6IiIsInZpZGVvX3N0eWxlIjoiIiwicGxheWljb25fY29sb3IiOiIiLCJob3Zlcl9pY29uIjoiIiwiZ2FsbGVyeV9iZyI6IiJ9LCJlZmZlY3RzIjp7InZpZGVvX2JveCI6IiIsImZsaXBfZWZmZWN0IjoiIn0sImdhbGxlcnlfaWQiOiI2Mzk5YWIzNjU0ZDA3IiwibmV4dCI6IiIsInByZXYiOiIifQ==" data-player="large" data-showdesc="on">
+				<div>
+										<div class="yotu-wrapper-player" style="width:600px">
+												<div class="yotu-player">
+							<div class="yotu-video-placeholder" id="yotu-player-6399ab36ad2e0"></div>
+						</div>
+						<div class="yotu-playing-status"></div>
+											</div>
+
+					<div class="yotu-videos yotu-mode-mix yotu-mode-grid yotu-column-3 yotu-player-mode-large">
+	<ul>
+					<li class=" yotu-first">
+								<a href="#AvS1MQIFMos" class="yotu-video" data-videoid="AvS1MQIFMos" data-title="Händel - Suite in D minor, HWV 437 | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/AvS1MQIFMos/sddefault.jpg" alt="Händel - Suite in D minor, HWV 437 | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Händel - Suite in D minor, HWV 437 | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#NqB40ioT32U" class="yotu-video" data-videoid="NqB40ioT32U" data-title="Glinka - The Lark | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/NqB40ioT32U/sddefault.jpg" alt="Glinka - The Lark | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Glinka - The Lark | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#6i5JKypYnBg" class="yotu-video" data-videoid="6i5JKypYnBg" data-title="Dorman - Suite for Harp | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/6i5JKypYnBg/sddefault.jpg" alt="Dorman - Suite for Harp | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Dorman - Suite for Harp | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#SU0sDIxde2E" class="yotu-video" data-videoid="SU0sDIxde2E" data-title="Scarlatti - Sonata in Si minore, K.27 | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/SU0sDIxde2E/sddefault.jpg" alt="Scarlatti - Sonata in Si minore, K.27 | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Scarlatti - Sonata in Si minore, K.27 | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#hMWMWd1r4sY" class="yotu-video" data-videoid="hMWMWd1r4sY" data-title="Ginastera - Danza de la moza donosa | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/hMWMWd1r4sY/sddefault.jpg" alt="Ginastera - Danza de la moza donosa | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Ginastera - Danza de la moza donosa | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#VLuJVeHtel0" class="yotu-video" data-videoid="VLuJVeHtel0" data-title="Ginastera - Harp Concerto | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/VLuJVeHtel0/sddefault.jpg" alt="Ginastera - Harp Concerto | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Ginastera - Harp Concerto | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#XjhAjkt5Cpg" class="yotu-video" data-videoid="XjhAjkt5Cpg" data-title="Paradisi - Toccata | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/XjhAjkt5Cpg/sddefault.jpg" alt="Paradisi - Toccata | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Paradisi - Toccata | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#eJnpurd5Rzc" class="yotu-video" data-videoid="eJnpurd5Rzc" data-title="Renié - Contemplation | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/eJnpurd5Rzc/sddefault.jpg" alt="Renié - Contemplation | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Renié - Contemplation | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#DCZKZyglKLE" class="yotu-video" data-videoid="DCZKZyglKLE" data-title="Hindemith - Sonata for Harp | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/DCZKZyglKLE/sddefault.jpg" alt="Hindemith - Sonata for Harp | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Hindemith - Sonata for Harp | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#cFLGT-_Idz8" class="yotu-video" data-videoid="cFLGT-_Idz8" data-title="Damase - Sicilienne Variée | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/cFLGT-_Idz8/sddefault.jpg" alt="Damase - Sicilienne Variée | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Damase - Sicilienne Variée | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+						<li class="">
+								<a href="#9JNFoliJ9Q0" class="yotu-video" data-videoid="9JNFoliJ9Q0" data-title="Godefroid - Carnaval de Venise | Claudia Lucia Lamanna">
+					<div class="yotu-video-thumb-wrp">
+						<div>
+														<img class="yotu-video-thumb" src="https://i.ytimg.com/vi/9JNFoliJ9Q0/sddefault.jpg" alt="Godefroid - Carnaval de Venise | Claudia Lucia Lamanna">
+													</div>
+					</div>
+											<h3 class="yotu-video-title">Godefroid - Carnaval de Venise | Claudia Lucia Lamanna</h3>
+																					<div class="yotu-video-description"></div>
+									</a>
+							</li>
+				
+				</ul>
+</div>
+<div class="yotu-pagination yotu-hide">
+	<a href="#" class="yotu-pagination-more yotu-button-prs yotu-button-prs-1" data-page="more">Load more</a>
+</div>
+				</div>
+			</div>
+			
 </div>
 </div>
 </div>
@@ -380,7 +554,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <td>December 23, 2022</td>
 <td>Brindisi (Italy), Pontificia Basilica Cattedrale</td>
 <td><strong>I suoni della Devozione &#8211; Recital</strong></td>
-<td>h 20:00</td>
+<td><a href="https://iltaccodibacco.it/en/puglia/eventi/252137.html" target="_blank" rel="noreferrer noopener">WEBSITE</a></td>
 </tr>
 <tr>
 <td>February 25, 2023</td>
@@ -393,6 +567,18 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <td>Fabriano (Italy), Oratorio della Carità</td>
 <td><strong>Recital</strong></td>
 <td><a href="https://www.jeunesse.it/evento/gmi-fabriano-stagione-musica-da-camera-2022-2023-6/" target="_blank" rel="noreferrer noopener">WEBSITE</a></td>
+</tr>
+<tr>
+<td>April 15, 2023</td>
+<td>Roma (Italy), Auditorium Parco della Musica</td>
+<td><strong>Recital</strong></td>
+<td>TBA</td>
+</tr>
+<tr>
+<td>May 19, 2023</td>
+<td>Xalapa (Mexico)</td>
+<td><strong>Glière&#8217;s Harp Concerto with Orquesta Sinfónica de Xalapa</strong></td>
+<td>TBA</td>
 </tr>
 </tbody></table></figure>
 
@@ -597,7 +783,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 
 
 <div class="protection">
-<input type="hidden" id="wp-block-themeisle-blocks-form-28d0190b_nonce_field" name="wp-block-themeisle-blocks-form-28d0190b_nonce_field" value="0a00a30b4f"><input type="hidden" name="_wp_http_referer" value="/claudialucialamanna.com/">
+<input type="hidden" id="wp-block-themeisle-blocks-form-28d0190b_nonce_field" name="wp-block-themeisle-blocks-form-28d0190b_nonce_field" value="6e4d8052a8"><input type="hidden" name="_wp_http_referer" value="/claudialucialamanna.com/">
 </div>
 <div class="wp-block-button"><button class="wp-block-button__link" type="submit">Submit</button></div>
 </form></div>
@@ -628,7 +814,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 }#wp-block-themeisle-blocks-advanced-column-d23f14e1 > .wp-block-themeisle-blocks-advanced-column-overlay {opacity: 0.5;mix-blend-mode: normal;}@media ( min-width: 960px ){#wp-block-themeisle-blocks-advanced-column-d23f14e1 {flex-basis: 100%;}}@media ( max-width: 960px ){}@media ( max-width: 600px ){}.ticss-5407b88e {
   padding:0;
 }
-#wp-block-themeisle-blocks-advanced-columns-25cb8dd0 {min-height: auto;}#wp-block-themeisle-blocks-advanced-columns-25cb8dd0 > .wp-block-themeisle-blocks-advanced-columns-overlay {opacity: 0.5;mix-blend-mode: normal;}@media ( max-width: 960px ){}@media ( max-width: 600px ){}#wp-block-themeisle-blocks-advanced-column-fb7e14d5 > .wp-block-themeisle-blocks-advanced-column-overlay {opacity: 0.5;mix-blend-mode: normal;}@media ( min-width: 960px ){#wp-block-themeisle-blocks-advanced-column-fb7e14d5 {flex-basis: 100%;}}@media ( max-width: 960px ){}@media ( max-width: 600px ){}.ticss-0ebf017d {
+#wp-block-themeisle-blocks-advanced-columns-092424c4 {min-height: auto;}#wp-block-themeisle-blocks-advanced-columns-092424c4 > .wp-block-themeisle-blocks-advanced-columns-overlay {opacity: 0.5;mix-blend-mode: normal;}@media ( max-width: 960px ){}@media ( max-width: 600px ){}#wp-block-themeisle-blocks-advanced-column-fb7e14d5 > .wp-block-themeisle-blocks-advanced-column-overlay {opacity: 0.5;mix-blend-mode: normal;}@media ( min-width: 960px ){#wp-block-themeisle-blocks-advanced-column-fb7e14d5 {flex-basis: 100%;}}@media ( max-width: 960px ){}@media ( max-width: 600px ){}.ticss-0ebf017d {
   padding: 0;
 }
 .ticss-8284b3f6 {
@@ -670,11 +856,13 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 }
 #wp-block-themeisle-blocks-form-input-70a3648c {--label-color: #fffaf0;}.ticss-70a3648c {
 }</style>
+<link rel="stylesheet" id="yotu-style-css" href="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/yotuwp-easy-youtube-embed/assets/css/frontend.min.css?ver=1.3.12" type="text/css" media="all">
+<link rel="stylesheet" id="yotu-icons-css" href="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/yotuwp-easy-youtube-embed/assets/css/icons.min.css?ver=1.3.12" type="text/css" media="all">
 <style id="core-block-supports-inline-css" type="text/css">.wp-block-buttons.wp-container-1{flex-direction:column;align-items:flex-start;}.wp-block-columns.wp-container-6{flex-wrap:nowrap;}.wp-block-buttons.wp-container-2,.wp-block-buttons.wp-container-7,.wp-block-buttons.wp-container-8,.wp-block-social-links.wp-container-9{justify-content:center;}</style>
 <script type="text/javascript" id="otter-form-js-extra">
 /* <![CDATA[ */
-var themeisleGutenbergForm = {"reRecaptchaSitekey":"","root":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-json\/","nonce":"fd1449f3c2","messages":{"submission":"Form submission from","captcha-not-loaded":"Captcha is not loaded. Please check your browser plugins to allow the Google reCaptcha.","check-captcha":"Please check the captcha.","invalid-email":"The email address is invalid!","already-registered":"The email was already registered!","try-again":"Error. Something is wrong with the server! Try again later.","privacy":"I have read and agreed the privacy statement."}};
-var themeisleGutenbergForm = {"reRecaptchaSitekey":"","root":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-json\/","nonce":"fd1449f3c2","messages":{"submission":"Form submission from","captcha-not-loaded":"Captcha is not loaded. Please check your browser plugins to allow the Google reCaptcha.","check-captcha":"Please check the captcha.","invalid-email":"The email address is invalid!","already-registered":"The email was already registered!","try-again":"Error. Something is wrong with the server! Try again later.","privacy":"I have read and agreed the privacy statement."}};
+var themeisleGutenbergForm = {"reRecaptchaSitekey":"","root":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-json\/","nonce":"3317b00506","messages":{"submission":"Form submission from","captcha-not-loaded":"Captcha is not loaded. Please check your browser plugins to allow the Google reCaptcha.","check-captcha":"Please check the captcha.","invalid-email":"The email address is invalid!","already-registered":"The email was already registered!","try-again":"Error. Something is wrong with the server! Try again later.","privacy":"I have read and agreed the privacy statement."}};
+var themeisleGutenbergForm = {"reRecaptchaSitekey":"","root":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-json\/","nonce":"3317b00506","messages":{"submission":"Form submission from","captcha-not-loaded":"Captcha is not loaded. Please check your browser plugins to allow the Google reCaptcha.","check-captcha":"Please check the captcha.","invalid-email":"The email address is invalid!","already-registered":"The email was already registered!","try-again":"Error. Something is wrong with the server! Try again later.","privacy":"I have read and agreed the privacy statement."}};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/otter-blocks/build/blocks/form.js?ver=e43a64ac603fce937144" id="otter-form-js" defer></script>
@@ -687,7 +875,7 @@ var wpcf7 = {"api":{"root":"https:\/\/claudiofus.github.io\/claudialucialamanna.
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7" id="contact-form-7-js"></script>
 <script type="text/javascript" id="neve-script-js-extra">
 /* <![CDATA[ */
-var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"fd1449f3c2","isRTL":"","isCustomize":""};
+var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"3317b00506","isRTL":"","isCustomize":""};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=3.4.7" id="neve-script-js" async></script>
@@ -738,6 +926,16 @@ var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialam
 		attributes: true
 	});
 </script>
+<script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="yotu-script-js-extra">
+/* <![CDATA[ */
+var yotujs = {"ajax_url":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","player":{"mode":"large","width":"600","scrolling":"100","autoplay":0,"controls":1,"modestbranding":1,"loop":0,"autonext":0,"showinfo":1,"rel":1,"playing":0,"playing_description":0,"thumbnails":0,"cc_load_policy":"1","cc_lang_pref":"1","hl":"","iv_load_policy":"1"},"lang":{"1":"Forbidden: You do not have permission to access resource on this server.","2":"Resource not found, please ensure you has correct information.","3":"Resource not found, please inform administrator about issues.","4":"Search Results:","5":"YotuWP: An issue happend when getting the videos, please check your connection and refresh page again.","6":"YotuWP: 500 Internal Server Error. Please inform administrator about issues.","7":"Play next video.","8":"Play previous video.","9":"Please insert license key before verify","10":"Are you sure about deactivation current license for this domain?","11":"Checking..."},"security":"49b948750d"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/yotuwp-easy-youtube-embed/assets/js/frontend.min.js?ver=1.3.12" id="yotu-script-js"></script>
+<script type="text/javascript" id="yotu-script-js-after">
+yotuwp.data.videos['AvS1MQIFMos'] = ["Händel - Suite in D minor, HWV 437 | Claudia Lucia Lamanna","Georg Friedrich Händel (1685-1759) - Suite in D minor, HWV 437<br \/>\n<br \/>\n00:02 - 1. Allemande<br \/>\n01:28 - 2. Courante<br \/>\n02:20 - 3. Sarabande<br \/>\n04:42 - 4. Gigue<br \/>\n<br \/>\nLive performance by Claudia Lucia Lamanna<br \/>\nhttps:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['NqB40ioT32U'] = ["Glinka - The Lark | Claudia Lucia Lamanna","Michail Ivanovič Glinka (1804 - 1857) - The Lark<br \/>\n(arrangement by Milij Alekseevič Balakirev &amp; Alexander Slepushkin)<br \/>\nLive performance by Claudia Lucia Lamanna<br \/>\nhttps:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['6i5JKypYnBg'] = ["Dorman - Suite for Harp | Claudia Lucia Lamanna","Avner Dorman (1975) - Suite for Harp (2020)<br \/>\n<br \/>\n00:01 - 1. Prelude<br \/>\n02:12 - 2. Improvisation<br \/>\n05:06 - 3. Dance<br \/>\n<br \/>\nLive performance by Claudia Lucia Lamanna<br \/>\nhttps:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['SU0sDIxde2E'] = ["Scarlatti - Sonata in Si minore, K.27 | Claudia Lucia Lamanna","Domenico Scarlatti (1685 - 1757) - Sonata in Si minore, K.27<br \/>\nLive performance by Claudia Lucia Lamanna<br \/>\nhttps:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['hMWMWd1r4sY'] = ["Ginastera - Danza de la moza donosa | Claudia Lucia Lamanna","Alberto Ginastera (1916 - 1983) - Danza de la moza donosa (1937)<br \/>\nArrangement and live performance by Claudia Lucia Lamanna<br \/>\nhttps:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['VLuJVeHtel0'] = ["Ginastera - Harp Concerto | Claudia Lucia Lamanna","Alberto Ginastera (1916 - 1983) - Harp Concerto, Op. 25 (1956)<br \/>\n<br \/>\n00:01 - 1. Allegro giusto<br \/>\n08:43 - 2. Molto moderato<br \/>\n15:28 - Liberamente capriccioso (cadenza)<br \/>\n19:06 - 3. Vivace<br \/>\n<br \/>\nLive performance at Teatro Duse, Bologna, Italy, on Monday, April 10th, 2017<br \/>\n<br \/>\nClaudia Lucia Lamanna, harp | https:\/\/www.claudialucialamanna.com\/<br \/>\nMatteo Parmeggiani, conductor<br \/>\nOrchestra Senzaspine"];yotuwp.data.videos['XjhAjkt5Cpg'] = ["Paradisi - Toccata | Claudia Lucia Lamanna","Pietro Domenico Paradisi (1707 - 1791) - Toccata in La maggiore<br \/>\nLive performance at Oslo Opera House, Norway, on February 21st, 2016<br \/>\nClaudia Lucia Lamanna | https:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['eJnpurd5Rzc'] = ["Renié - Contemplation | Claudia Lucia Lamanna","Henriette Renié (1875 - 1956) - Contemplation<br \/>\nLive performance at Oslo Opera House, Norway, on February 21st, 2016<br \/>\nClaudia Lucia Lamanna | https:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['DCZKZyglKLE'] = ["Hindemith - Sonata for Harp | Claudia Lucia Lamanna","Paul Hindemith (1895 - 1963) - Sonata for Harp (1939)<br \/>\n<br \/>\n00:01 - 1. Mäßig schnell<br \/>\n04:56 - 2. Lebhaft<br \/>\n07:19 - 3. Sehr langsam<br \/>\n<br \/>\nLive performance at Oslo Opera House, Norway, on February 21st, 2016<br \/>\nClaudia Lucia Lamanna | https:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['cFLGT-_Idz8'] = ["Damase - Sicilienne Variée | Claudia Lucia Lamanna","Jean-Michel Damase (1928 - 2013) - Sicilienne Variée (1966)<br \/>\nLive performance at Oslo Opera House, Norway, on February 21st, 2016<br \/>\nClaudia Lucia Lamanna | https:\/\/www.claudialucialamanna.com\/"];yotuwp.data.videos['9JNFoliJ9Q0'] = ["Godefroid - Carnaval de Venise | Claudia Lucia Lamanna","Félix Godefroid (1818 - 1897) - Carnaval de Venise<br \/>\nLive performance at Oslo Opera House, Norway, on February 21st, 2016<br \/>\nClaudia Lucia Lamanna | https:\/\/www.claudialucialamanna.com\/"];
+</script>
 </body>
-
 </html>

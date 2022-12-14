@@ -141,7 +141,32 @@ border-top: none;
 border-left: none;
 border-right: none;}
 
-table td a {color: #000 !important; border: 2px solid black; text-decoration: none; padding: 5px; border-radius: 5px}</style>
+table td a {color: #000 !important; border: 2px solid black; text-decoration: none; padding: 5px; border-radius: 5px}
+
+/**—————- TABELLA MOBILE —————-**/
+@media only screen and (max-width: 840px) {
+  table {
+    width: 100%;
+}
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+}
+  tr td:first-child {
+    background: linear-gradient(45deg, lightgrey, transparent);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+  tbody td {
+    display: block;
+    text-align: center !important;
+    border:none !important;
+}
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+}
+}</style>
 		
 	</head>
 
@@ -288,11 +313,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <div class="wp-block-themeisle-blocks-advanced-columns-overlay"></div>
 <div class="innerblocks-wrap">
 <div id="wp-block-themeisle-blocks-advanced-column-3144cbb9" class="wp-block-themeisle-blocks-advanced-column ticss-5418d6a3">
-<h2>Past Events (ALCUNI LINK SONO SCADUTI)</h2>
-
-
-
-<p>Con stesso carattere e font della Homepage, stile come Homepage e mobile come vecchio sito</p>
+<h2 class="ticss-4dcd7bcf">Past Events</h2>
 
 
 
@@ -301,19 +322,19 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <td>December 4, 2022</td>
 <td>Mesagne (Italy), Teatro Comunale</td>
 <td><strong>Premio Letterario Nazionale &#8220;Città di Mesagne&#8221;</strong></td>
-<td><a rel="noreferrer noopener" href="https://scontent.ffco3-1.fna.fbcdn.net/v/t39.30808-6/318124153_6254397964593738_8701976773249669489_n.jpg?_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=pzpL-OrXDo8AX886snb&amp;_nc_ht=scontent.ffco3-1.fna&amp;oh=00_AfCOA4JUG8R-CdESZ-GoWwFGNENKsR7nRgXaNUROAI4MQg&amp;oe=63914C1C" target="_blank">WEBSITE</a></td>
+<td><a href="https://www.quimesagne.it/domenica-4-dicembre-manifestazione-conclusiva-del-premio-letterario-nazionale-citta-di-mesagne/" target="_blank" rel="noreferrer noopener">WEBSITE</a></td>
 </tr>
 <tr>
 <td>November 28, 2022</td>
 <td>Triggiano (Italy), Casa della Cultura &#8220;Rocco Dicillo&#8221;</td>
 <td><strong>Premio Trebbio Speciale</strong></td>
-<td><a href="https://scontent.ffco3-1.fna.fbcdn.net/v/t39.30808-6/317087489_591105956350145_5745639453007736840_n.jpg?_nc_cat=109&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=BS94X_d5QVYAX_QPwIq&amp;tn=oXoOV6yvcopIlXME&amp;_nc_ht=scontent.ffco3-1.fna&amp;oh=00_AfAr-6AkWZhH2Id2GkOaCdRRF3mOIULr8P0dP-Xh9DBHiQ&amp;oe=638E8F8D" target="_blank" rel="noreferrer noopener">WEBSITE</a></td>
+<td>h 18:00</td>
 </tr>
 <tr>
 <td>November 13-15, 2022</td>
 <td>Hong Kong, Sheung Wan Civic Centre, Lecture Hall</td>
 <td><strong>Recital and Masterclass</strong></td>
-<td><a href="https://scontent.ffco3-1.fna.fbcdn.net/v/t39.30808-6/314407095_1867862350217923_289111974431628832_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=8bfeb9&amp;_nc_ohc=qNeoOrBB5uAAX8iY5AQ&amp;_nc_ht=scontent.ffco3-1.fna&amp;oh=00_AfCzSnbmg535zqizs9SISFjLuh2gxNwNim9EEOfTetBNNw&amp;oe=638F9F45" target="_blank" rel="noreferrer noopener">WEBSITE</a></td>
+<td>h 15:00</td>
 </tr>
 <tr>
 <td>November 4-6, 2022</td>
@@ -355,13 +376,13 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <td>October 15, 2022</td>
 <td>Sulmona (Italy), Teatro Comunale Maria Caniglia</td>
 <td><strong>Premio Sulmona</strong></td>
-<td><a rel="noreferrer noopener" href="https://www.askanews.it/cronaca/2022/10/11/assegnati-i-premi-sulmona-2022-di-giornalismo-pn_20221011_00165/" target="_blank">WEBSITE</a></td>
+<td>h 17:00</td>
 </tr>
 <tr>
 <td>October 14, 2022</td>
 <td>Monopoli (Italy), Teatro Radar</td>
-<td><strong>Harpissima</strong></td>
-<td><a href="https://scontent.ffco3-1.fna.fbcdn.net/v/t39.30808-6/310492060_5477056309082631_2449380134685951006_n.jpg?_nc_cat=110&amp;ccb=1-7&amp;_nc_sid=730e14&amp;_nc_ohc=IOlpdHKAvAAAX8HAfQB&amp;_nc_ht=scontent.ffco3-1.fna&amp;oh=00_AfAtDFAozc2-6OISi4a-9pc2htkSkXnE2NUFasebAUBiCg&amp;oe=6390DA05" target="_blank" rel="noreferrer noopener">WEBSITE</a></td>
+<td><strong>Harpissima 2022</strong></td>
+<td>h 18:00</td>
 </tr>
 <tr>
 <td>October 9, 2022</td>
@@ -427,7 +448,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 <td>June 21, 2022</td>
 <td>Corleto Perticara (Italy), Cine-Teatro Comunale</td>
 <td><strong>Premio Rossetti-Montano</strong></td>
-<td><a rel="noreferrer noopener" href="https://www.prolococorletana.it/premiati/" target="_blank">WEBSITE</a></td>
+<td>h 18:30</td>
 </tr>
 <tr>
 <td>June 2, 2022</td>
@@ -474,7 +495,7 @@ table td a {color: #000 !important; border: 2px solid black; text-decoration: no
 </div>
 <!--/.wrapper-->
 
-<style type="text/css" media="all">#wp-block-themeisle-blocks-advanced-columns-61c5c2f6{padding-top:80px;padding-bottom:0;padding-left:0;padding-right:0;margin-top:0;margin-bottom:0;--columns-width:1180px;justify-content:center;min-height:auto;border-width:0;border-style:solid;border-radius:0}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6>.wp-block-themeisle-blocks-advanced-columns-overlay{opacity:.5;mix-blend-mode:normal;border-radius:0}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.top svg{height:100px;scale:1 1}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.bottom svg{height:100px;scale:1 1}@media (max-width:960px){#wp-block-themeisle-blocks-advanced-columns-61c5c2f6{padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;margin-top:20px;margin-bottom:20px}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.top svg{height:100px;scale:1 1}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.bottom svg{height:100px;scale:1 1}}@media (max-width:600px){#wp-block-themeisle-blocks-advanced-columns-61c5c2f6{padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;margin-top:20px;margin-bottom:20px}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.top svg{height:100px;scale:1 1}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.bottom svg{height:100px;scale:1 1}}#wp-block-themeisle-blocks-advanced-column-3144cbb9{padding-top:0;padding-bottom:0;padding-left:20px;padding-right:0;margin-top:20px;margin-bottom:0;margin-left:20px;margin-right:0;border-width:0;border-style:solid;border-radius:0}#wp-block-themeisle-blocks-advanced-column-3144cbb9>.wp-block-themeisle-blocks-advanced-column-overlay{opacity:.5;mix-blend-mode:normal;border-radius:0}@media (min-width:960px){#wp-block-themeisle-blocks-advanced-column-3144cbb9{flex-basis:100%}}@media (max-width:960px){#wp-block-themeisle-blocks-advanced-column-3144cbb9{padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;margin-top:20px;margin-bottom:20px;margin-left:0;margin-right:0}}@media (max-width:600px){#wp-block-themeisle-blocks-advanced-column-3144cbb9{padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0}}</style>
+<style type="text/css" media="all">#wp-block-themeisle-blocks-advanced-columns-61c5c2f6{padding-top:80px;padding-bottom:0;padding-left:0;padding-right:0;margin-top:0;margin-bottom:0;--columns-width:1180px;justify-content:center;min-height:auto;border-width:0;border-style:solid;border-radius:0}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6>.wp-block-themeisle-blocks-advanced-columns-overlay{opacity:.5;mix-blend-mode:normal;border-radius:0}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.top svg{height:100px;scale:1 1}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.bottom svg{height:100px;scale:1 1}@media (max-width:960px){#wp-block-themeisle-blocks-advanced-columns-61c5c2f6{padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;margin-top:20px;margin-bottom:20px}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.top svg{height:100px;scale:1 1}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.bottom svg{height:100px;scale:1 1}}@media (max-width:600px){#wp-block-themeisle-blocks-advanced-columns-61c5c2f6{padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;margin-top:20px;margin-bottom:20px}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.top svg{height:100px;scale:1 1}#wp-block-themeisle-blocks-advanced-columns-61c5c2f6 .wp-block-themeisle-blocks-advanced-columns-separators.bottom svg{height:100px;scale:1 1}}#wp-block-themeisle-blocks-advanced-column-3144cbb9{padding-top:0;padding-bottom:0;padding-left:20px;padding-right:0;margin-top:20px;margin-bottom:0;margin-left:20px;margin-right:0;border-width:0;border-style:solid;border-radius:0}#wp-block-themeisle-blocks-advanced-column-3144cbb9>.wp-block-themeisle-blocks-advanced-column-overlay{opacity:.5;mix-blend-mode:normal;border-radius:0}@media (min-width:960px){#wp-block-themeisle-blocks-advanced-column-3144cbb9{flex-basis:100%}}@media (max-width:960px){#wp-block-themeisle-blocks-advanced-column-3144cbb9{padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;margin-top:20px;margin-bottom:20px;margin-left:0;margin-right:0}}@media (max-width:600px){#wp-block-themeisle-blocks-advanced-column-3144cbb9{padding-top:20px;padding-bottom:20px;padding-left:20px;padding-right:20px;margin-top:0;margin-bottom:0;margin-left:0;margin-right:0}}.ticss-4dcd7bcf{font-family:"Playfair Display",sans-serif !important;font-size:2.5rem}</style>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7" id="swv-js"></script>
 <script type="text/javascript" id="contact-form-7-js-extra">
 /* <![CDATA[ */
@@ -484,7 +505,7 @@ var wpcf7 = {"api":{"root":"https:\/\/claudiofus.github.io\/claudialucialamanna.
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7" id="contact-form-7-js"></script>
 <script type="text/javascript" id="neve-script-js-extra">
 /* <![CDATA[ */
-var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"fd1449f3c2","isRTL":"","isCustomize":""};
+var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"3317b00506","isRTL":"","isCustomize":""};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=3.4.7" id="neve-script-js" async></script>
@@ -536,5 +557,4 @@ var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialam
 	});
 </script>
 </body>
-
 </html>
