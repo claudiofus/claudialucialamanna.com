@@ -139,12 +139,20 @@ header {
 
 #nv-primary-navigation-main {font-size: 18px;}
 
-table td { border: none !important;}
+table td {     
+	border-left: none !important;
+	border-top: none !important;
+	border-right: none !important;}
 
-table tr { border: 1px solid #0d0e0f;
+.wp-block-table table {
+	border-collapse: separate;
+}
+
+/*table tr { border: 1px solid #0d0e0f;
 	border-top: none;
 	border-left: none;
 	border-right: none;}
+*/
 
 table td a {color: #000 !important; border: 2px solid black; text-decoration: none; padding: 5px; border-radius: 5px}
 
@@ -260,9 +268,15 @@ input[type="text"], input[type="email"], textarea {
 
 .wpcf7-response-output {
 	margin: 0 !important;
-	color:red !important;
     border: none !important;
-}</style>
+	padding: 0 0.5em !important;
+}
+
+.wpcf7-not-valid-tip, .wpcf7-response-output {color: red !important;}
+
+#responsive-form .form-row:last-child p {
+		margin-bottom: 0;
+	}</style>
 		
 	</head>
 
@@ -481,7 +495,7 @@ var wpcf7 = {"api":{"root":"https:\/\/claudiofus.github.io\/claudialucialamanna.
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7" id="contact-form-7-js"></script>
 <script type="text/javascript" id="neve-script-js-extra">
 /* <![CDATA[ */
-var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"ba62a54292","isRTL":"","isCustomize":""};
+var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"285be139cc","isRTL":"","isCustomize":""};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=3.4.7" id="neve-script-js" async></script>
