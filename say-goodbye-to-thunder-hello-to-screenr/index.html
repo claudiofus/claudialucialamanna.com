@@ -70,7 +70,14 @@ img.emoji {
 <link rel="shortlink" href="https://claudiofus.github.io/claudialucialamanna.com/?p=50">
 <link rel="alternate" type="application/json+oembed" href="https://claudiofus.github.io/claudialucialamanna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclaudiofus.github.io%2Fclaudialucialamanna.com%2Fsay-goodbye-to-thunder-hello-to-screenr%2F">
 <link rel="alternate" type="text/xml+oembed" href="https://claudiofus.github.io/claudialucialamanna.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fclaudiofus.github.io%2Fclaudialucialamanna.com%2Fsay-goodbye-to-thunder-hello-to-screenr%2F&#038;format=xml">
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">#wp-block-themeisle-blocks-form-input-6d1d9f28,
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<link rel="icon" href="https://claudiofus.github.io/claudialucialamanna.com/wp-content/uploads/2022/12/cropped-CL-2-32x32.png" sizes="32x32">
+<link rel="icon" href="https://claudiofus.github.io/claudialucialamanna.com/wp-content/uploads/2022/12/cropped-CL-2-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://claudiofus.github.io/claudialucialamanna.com/wp-content/uploads/2022/12/cropped-CL-2-180x180.png">
+<meta name="msapplication-TileImage" content="https://claudiofus.github.io/claudialucialamanna.com/wp-content/uploads/2022/12/cropped-CL-2-270x270.png">
+		<style type="text/css" id="wp-custom-css">html {scroll-behavior: smooth;}
+
+#wp-block-themeisle-blocks-form-input-6d1d9f28,
 #wp-block-themeisle-blocks-form-input-41ab4603,
 #wp-block-themeisle-blocks-form-textarea-92e99889{
 	padding: 16px;
@@ -131,8 +138,8 @@ header {
 
 /** PULSANTI **/
 .wp-block-button__link {
-	border: 2px solid #0d0e0f;
-	color: #0d0e0f !important;
+	border: 2px solid #000;
+	color: #000 !important;
 	font-size: 18px;
 	font-family: "Playfair Display", sans-serif !important;
 	background-color: transparent !important;
@@ -141,7 +148,7 @@ header {
 
 .wp-block-button__link:hover {
 	color: #FFFAF0 !important;
-	background-color: #0d0e0f !important;
+	background-color: #000 !important;
 }
 
 #nv-primary-navigation-main {font-size: 18px;}
@@ -155,13 +162,7 @@ table td {
 	border-collapse: separate;
 }
 
-/*table tr { border: 1px solid #0d0e0f;
-	border-top: none;
-	border-left: none;
-	border-right: none;}
-*/
-
-table td a {color: #000 !important; border: 1px solid black; text-decoration: none; padding: 5px; border-radius: 5px}
+table td a, .wp-block-quote a {color: #000 !important; border: 1px solid black; text-decoration: none; padding: 5px; border-radius: 5px}
 
 /**—————- TABELLA MOBILE —————-**/
 @media only screen and (max-width: 840px) {
@@ -177,7 +178,6 @@ table td a {color: #000 !important; border: 1px solid black; text-decoration: no
 		background-color: inherit;
 	}
 	tr td:first-child {
-		/*background: linear-gradient(45deg, lightgrey, transparent);*/
 		font-weight: bold;
 		font-size: 1.1em;
 		margin-top: 20px;
@@ -261,15 +261,9 @@ input[type="text"], input[type="email"], textarea {
     --formfieldbordercolor: #fffaf0 !important;
 }
 
-#responsive-form .asdasda {
-  color: #0d0e0f !important;
-  background-color: #fffaf0 !important;
-  border-radius: 5px;
-}
-
 #responsive-form .wp-block-button .wp-block-button__link:hover {
   color: #fffaf0 !important;
-  background-color: #0d0e0f !important;
+  background-color: #000 !important;
   border-radius: 6px;
 }
 
@@ -285,15 +279,17 @@ input[type="text"], input[type="email"], textarea {
 	margin-bottom: 0;
 }
 
+#responsive-form .form-row:last-child {text-align: center;}
+
 #btn-back-to-top {
 	position: fixed;
 	bottom: 60px;
 	right: 60px;
 	display: none;
 	z-index: 99999;
-	background: rgba(255,250,240,0.85);
+	background: #fffaf0;
 	border-radius: 50px;
-	padding: 10px 18px;
+	padding: 10px 15px;
 }
 
 #btn-back-to-top svg {
@@ -301,16 +297,11 @@ input[type="text"], input[type="email"], textarea {
 	font-size: 1.7em
 }
 
-#wpgpyt-wrapper {
-    display: inherit !important;
-}
-
 .spidochetube_inner {padding: 0 !important;}
 
 #___ytsubscribe_0 {margin-top: 30px !important;}
 
 .wpcf7-submit {  
-	margin-left: 10px;
 	color: #fffaf0 !important;
 	background-color: transparent !important;
 	border-radius: 5px;
@@ -321,7 +312,26 @@ input[type="text"], input[type="email"], textarea {
 .wpcf7-submit:hover {
 	color: black !important;
 	background-color: #fffaf0 !important;
-	border: 2px solid black !important;
+	border: 2px solid #fffaf0 !important;
+}
+
+.mirror-blockquote blockquote {border-width: 0 4px 0 0;
+    padding: 0 20px 0 0;}
+
+#responsive-form p {margin-bottom: 0;}
+
+
+.footer-bottom { background-color: #0d0e0f; }
+
+footer .builder-item .item--inner {
+	display: flex;
+	justify-content: center;
+	font-size: 13px;
+	color: #fffaf0 !important;
+}
+
+footer .builder-item .item--inner a {
+	color: #fffaf0 !important;
 }</style>
 		
 	</head>
@@ -365,7 +375,7 @@ input[type="text"], input[type="email"], textarea {
 <li id="menu-item-1307" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1307"><a href="https://claudiofus.github.io/claudialucialamanna.com/#bio">BIO</a></li>
 <li id="menu-item-1308" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1308"><a href="https://claudiofus.github.io/claudialucialamanna.com/#video">VIDEO</a></li>
 <li id="menu-item-1309" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1309"><a href="https://claudiofus.github.io/claudialucialamanna.com/#events">EVENTS</a></li>
-<li id="menu-item-1310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1310"><a href="https://claudiofus.github.io/claudialucialamanna.com/#album">DISCOGRAPHY</a></li>
+<li id="menu-item-1310" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1310"><a href="https://claudiofus.github.io/claudialucialamanna.com/#discography">DISCOGRAPHY</a></li>
 <li id="menu-item-1311" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1311"><a href="https://claudiofus.github.io/claudialucialamanna.com/#publications">PUBLICATIONS</a></li>
 <li id="menu-item-1312" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1312"><a href="https://claudiofus.github.io/claudialucialamanna.com/#gallery">GALLERY</a></li>
 <li id="menu-item-1313" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1313"><a href="https://claudiofus.github.io/claudialucialamanna.com/#press">PRESS</a></li>
@@ -443,7 +453,7 @@ input[type="text"], input[type="email"], textarea {
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1307"><a href="https://claudiofus.github.io/claudialucialamanna.com/#bio">BIO</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1308"><a href="https://claudiofus.github.io/claudialucialamanna.com/#video">VIDEO</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1309"><a href="https://claudiofus.github.io/claudialucialamanna.com/#events">EVENTS</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1310"><a href="https://claudiofus.github.io/claudialucialamanna.com/#album">DISCOGRAPHY</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1310"><a href="https://claudiofus.github.io/claudialucialamanna.com/#discography">DISCOGRAPHY</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1311"><a href="https://claudiofus.github.io/claudialucialamanna.com/#publications">PUBLICATIONS</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1312"><a href="https://claudiofus.github.io/claudialucialamanna.com/#gallery">GALLERY</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1313"><a href="https://claudiofus.github.io/claudialucialamanna.com/#press">PRESS</a></li>
@@ -493,7 +503,7 @@ input[type="text"], input[type="email"], textarea {
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
 <p class="comment-form-url"><label for="url">Sito web</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
 <p class="comment-form-comment"><label for="comment">Commento <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
-<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Do il mio consenso affinché un cookie salvi i miei dati  (nome, email, sito web) per il prossimo commento.</label></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Do il mio consenso affinché un cookie salvi i miei dati (nome, email, sito web) per il prossimo commento.</label></p>
 <p class="form-submit"><input name="submit" type="submit" id="submit" class="button button-primary" value="Invia commento"> <input type="hidden" name="comment_post_ID" value="50" id="comment_post_ID">
 <input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>
@@ -554,7 +564,7 @@ input[type="text"], input[type="email"], textarea {
 	<div class="footer--row-inner footer-bottom-inner footer-content-wrap">
 		<div class="container">
 			<div class="hfg-grid nv-footer-content hfg-grid-bottom row--wrapper row " data-section="hfg_footer_layout_bottom">
-				<div class="hfg-slot left"><div class="builder-item"><div class="item--inner"><div class="component-wrap"><p><a href="https://claudiofus.github.io/" rel="nofollow">Made with &lt;3 by Claudio Fusillo</a></p></div></div></div></div>							</div>
+				<div class="hfg-slot left"><div class="builder-item"><div class="item--inner"><div class="component-wrap"><p>Copyright © 2022 CLAUDIA LUCIA LAMANNA. All rights reserved - <a href="https://claudiofus.github.io/" rel="nofollow">Made by Claudio Fusillo</a></p></div></div></div></div>							</div>
 		</div>
 	</div>
 </div>
@@ -573,14 +583,14 @@ var wpcf7 = {"api":{"root":"https:\/\/claudiofus.github.io\/claudialucialamanna.
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.1" id="contact-form-7-js"></script>
 <script type="text/javascript" id="neve-script-js-extra">
 /* <![CDATA[ */
-var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"b22bfbe74d","isRTL":"","isCustomize":""};
+var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-admin\/admin-ajax.php","nonce":"2cea8670f4","isRTL":"","isCustomize":""};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/themes/neve/assets/js/build/modern/frontend.js?ver=3.4.7" id="neve-script-js" async></script>
 <script type="text/javascript" id="neve-script-js-after">
 	var html = document.documentElement;
 	var theme = html.getAttribute('data-neve-theme') || 'light';
-	var variants = {"logo":{"light":{"src":false,"srcset":false,"sizes":false},"dark":{"src":false,"srcset":false,"sizes":false},"same":true}};
+	var variants = {"logo":{"light":{"src":false,"srcset":false,"sizes":false},"dark":{"src":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-content\/uploads\/2022\/12\/CL-1.png","srcset":"https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-content\/uploads\/2022\/12\/CL-1.png 1280w, https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-content\/uploads\/2022\/12\/CL-1-300x300.png 300w, https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-content\/uploads\/2022\/12\/CL-1-1024x1024.png 1024w, https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-content\/uploads\/2022\/12\/CL-1-150x150.png 150w, https:\/\/claudiofus.github.io\/claudialucialamanna.com\/wp-content\/uploads\/2022\/12\/CL-1-768x768.png 768w","sizes":"(max-width: 1280px) 100vw, 1280px"},"same":true}};
 
 	function setCurrentTheme( theme ) {
 		var pictures = document.getElementsByClassName( 'neve-site-logo' );
@@ -625,6 +635,15 @@ var NeveProperties = {"ajaxurl":"https:\/\/claudiofus.github.io\/claudialucialam
 	});
 </script>
 <script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-includes/js/comment-reply.min.js?ver=6.1.1" id="comment-reply-js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LfPY84ZAAAAALe13OP65cHr9qsN30ML8RtQv-3t&#038;ver=3.0" id="google-recaptcha-js"></script>
+<script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6LfPY84ZAAAAALe13OP65cHr9qsN30ML8RtQv-3t","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://claudiofus.github.io/claudialucialamanna.com/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.7.1" id="wpcf7-recaptcha-js"></script>
 <script>//Get the button
 	let mybutton = document.getElementById("btn-back-to-top");
 
